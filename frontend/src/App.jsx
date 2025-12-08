@@ -15,7 +15,9 @@ export default function App() {
   const [chats, setChats] = useState([]);
   const [currentChatId, setCurrentChatId] = useState(null);
   const [sidebarOpen, setSidebarOpen] = useState(true);
-  const API = import.meta.env.VITE_API_URL || "http://localhost:8000";
+  const API = (import.meta.env.VITE_API_URL || "http://localhost:8000").replace(/\/+$/, "");
+  const url = (p) => new URL(p, API + "/").toString(); // url("/register")
+
 
   useEffect(() => {
     if (token) {
