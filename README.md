@@ -120,19 +120,6 @@ Build command:
 npm run build
 
 
-Output directory:
-
-dist
-
-📸 Screenshots (Add after deployment)
-
-Login page
-
-Chat interface
-
-MongoDB collections
-
-Backend logs
 
 🤖 AI Behavior
 
